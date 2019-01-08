@@ -19,7 +19,6 @@ namespace csvendr
         machineTotal += addedMoney;
       }
 
-
       bool standingIfFrontOfMachine = true;
 
       while (standingIfFrontOfMachine)
@@ -27,7 +26,13 @@ namespace csvendr
         Console.Clear();
         myMachine.PrintInventory();
         // ask question
+        Console.Write("What would you like to do? 1-Add Money 2-Purchase Item 3-Leave");
         var decision = Console.ReadLine();
+
+        var moneyToAdd = Console.ReadLine();
+
+        // addedMoney = float.TryParse("Cannot Add", out moneyToAdd);
+
 
         switch (decision)
         {
@@ -43,6 +48,10 @@ namespace csvendr
 
       }
 
+
+    }
+    public enum Menus
+    {
 
     }
   }

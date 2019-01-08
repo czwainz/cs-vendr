@@ -48,9 +48,6 @@ namespace csvendr.Models
       }
     }
 
-    public float AddMoney()
-    {
 
-    }
   }
 }
